@@ -1,0 +1,54 @@
+#N canvas 467 244 676 624 10;
+#X obj 160 44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 163 97 metro 1000;
+#X obj 226 231 + 1;
+#X obj 180 283 *;
+#X obj 179 317 + 2;
+#X obj 180 346 /;
+#X obj 251 282 + 2;
+#X floatatom 181 378 5 0 0 0 - - -, f 5;
+#X floatatom 259 260 5 0 0 0 - - -, f 5;
+#X floatatom 268 306 5 0 0 0 - - -, f 5;
+#X floatatom 136 350 5 0 0 0 - - -, f 5;
+#X obj 101 403 *;
+#X floatatom 103 445 20 0 0 0 - - -, f 20;
+#X obj 227 187 0;
+#X obj 170 184 4;
+#X floatatom 26 225 5 0 0 0 - - -, f 5;
+#X obj 74 190 1;
+#X text 282 39 Catalan Numbers Calculation using Recurssion;
+#X text 282 62 Base case for recursion is 1 which is 0 th Catalan number
+;
+#X text 9 187 Base Case;
+#X text 284 93 I have uysed Cn(4n+2)/(n+2) formula for a recursive
+function;
+#X text 288 187 This is number n starting from 1;
+#X text 101 185 constant 4;
+#X text 133 405 multiplying previous Catalan number with expression
+(4n+2)/(n+2);
+#X text 54 445 Result;
+#X text 265 229 increasing by 1 on every step;
+#X floatatom 70 533 5 0 0 0 - - -, f 5;
+#X connect 0 0 1 0;
+#X connect 1 0 13 0;
+#X connect 1 0 14 0;
+#X connect 1 0 16 0;
+#X connect 2 0 3 1;
+#X connect 2 0 6 0;
+#X connect 2 0 8 0;
+#X connect 2 0 13 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 0 10 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 6 0 9 0;
+#X connect 7 0 11 1;
+#X connect 11 0 12 0;
+#X connect 11 0 16 1;
+#X connect 12 0 26 0;
+#X connect 13 0 2 0;
+#X connect 14 0 3 0;
+#X connect 16 0 11 0;
+#X connect 16 0 15 0;
