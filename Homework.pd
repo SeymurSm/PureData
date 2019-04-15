@@ -1,0 +1,117 @@
+#N canvas 961 63 959 992 10;
+#X obj 160 44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 226 231 + 1;
+#X obj 180 283 *;
+#X obj 179 317 + 2;
+#X obj 180 346 /;
+#X obj 232 277 + 2;
+#X floatatom 181 378 5 0 0 0 - - -, f 5;
+#X floatatom 264 256 5 0 0 0 - - -, f 5;
+#X floatatom 233 316 5 0 0 0 - - -, f 5;
+#X floatatom 136 350 5 0 0 0 - - -, f 5;
+#X obj 101 403 *;
+#X floatatom 103 445 20 0 0 0 - - -, f 20;
+#X obj 227 187 0;
+#X obj 170 184 4;
+#X floatatom 6 223 10 0 0 0 - - -, f 10;
+#X obj 74 190 1;
+#X text 282 39 Catalan Numbers Calculation using Recurssion;
+#X text 282 62 Base case for recursion is 1 which is 0 th Catalan number
+;
+#X text 9 187 Base Case;
+#X text 284 93 I have uysed Cn(4n+2)/(n+2) formula for a recursive
+function;
+#X text 288 187 This is number n starting from 1;
+#X text 101 185 constant 4;
+#X text 133 405 multiplying previous Catalan number with expression
+(4n+2)/(n+2);
+#X text 54 445 Result;
+#X text 265 229 increasing by 1 on every step;
+#X floatatom 85 478 15 0 0 0 - - -, f 15;
+#X obj 539 384 2;
+#X floatatom 439 789 5 0 0 0 - - -, f 5;
+#X floatatom 480 787 5 0 0 0 - - -, f 5;
+#X obj 283 691 tabwrite~ base;
+#X obj 440 813 == 0;
+#X obj 482 811 == 0;
+#X floatatom 483 838 5 0 0 0 - - -, f 5;
+#X floatatom 440 840 5 0 0 0 - - -, f 5;
+#X text 298 801 if divisible by 3 or 7;
+#X obj 439 758 % 3;
+#X obj 480 759 % 7;
+#X obj 574 661 spigot;
+#X floatatom 512 617 5 0 0 0 - - -, f 5;
+#X floatatom 580 703 5 0 0 0 - - -, f 5;
+#X floatatom 132 554 20 0 0 0 - - -, f 20;
+#X obj 494 591 > 10000;
+#X obj 472 943 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 578 899 spigot;
+#X obj 496 895 spigot;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array base 100 float 3;
+#A 0 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020
+6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020
+6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020
+6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020 6020
+6020 6020 6020 6020 6020 6020 6020 6020 6020 6022 6022 6022 6022 6022
+6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022
+6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022 6022
+6022 6022 6022;
+#X coords 0 0 100 10000 200 10000 1 0 0;
+#X restore 736 30 graph;
+#X obj 136 589 print;
+#X text 8 621 Printing square of catalan numbers;
+#X obj 130 523 sqrt;
+#X floatatom 266 509 20 0 0 0 - - -, f 20;
+#X obj 163 97 metro 200;
+#X connect 0 0 50 0;
+#X connect 1 0 2 1;
+#X connect 1 0 5 0;
+#X connect 1 0 7 0;
+#X connect 1 0 12 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 9 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 1;
+#X connect 5 0 8 0;
+#X connect 6 0 10 1;
+#X connect 10 0 11 0;
+#X connect 10 0 15 1;
+#X connect 11 0 25 0;
+#X connect 12 0 1 0;
+#X connect 13 0 2 0;
+#X connect 15 0 10 0;
+#X connect 15 0 14 0;
+#X connect 25 0 48 0;
+#X connect 25 0 49 0;
+#X connect 27 0 30 0;
+#X connect 28 0 31 0;
+#X connect 30 0 33 0;
+#X connect 31 0 32 0;
+#X connect 32 0 43 0;
+#X connect 33 0 44 0;
+#X connect 35 0 27 0;
+#X connect 36 0 28 0;
+#X connect 37 0 39 0;
+#X connect 38 0 37 0;
+#X connect 38 0 37 1;
+#X connect 38 0 44 1;
+#X connect 38 0 43 1;
+#X connect 40 0 29 0;
+#X connect 40 0 46 0;
+#X connect 41 0 38 0;
+#X connect 43 0 42 0;
+#X connect 44 0 42 0;
+#X connect 48 0 40 0;
+#X connect 49 0 41 0;
+#X connect 49 0 29 0;
+#X connect 49 0 35 0;
+#X connect 49 0 36 0;
+#X connect 50 0 12 0;
+#X connect 50 0 13 0;
+#X connect 50 0 15 0;
+#X connect 50 0 26 0;
+#X connect 50 0 29 0;
