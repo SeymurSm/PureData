@@ -1,0 +1,251 @@
+#N canvas 0 104 1336 992 10;
+#X obj 147 403 cnv 100 300 180 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 626 402 cnv 100 300 180 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 447 403 cnv 100 180 180 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 447 584 cnv 100 180 300 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 447 103 cnv 100 180 300 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 452 590 cnv 30 40 120 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 458 633 bng 30 250 50 0 empty b_1 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 456 594 bng 30 250 50 0 empty a_1 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 457 675 bng 30 250 50 0 empty c_1 empty 17 7 0 10 -24198 -1
+-1;
+#X obj 362 712 cnv 30 80 40 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 408 717 bng 30 250 50 0 empty d_1 empty 17 7 0 10 -258699 -1
+-1;
+#X obj 369 717 bng 30 250 50 0 empty e_1 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 633 405 cnv 30 120 40 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 674 413 bng 30 250 50 0 empty b_2 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 710 412 bng 30 250 50 0 empty a_2 empty 17 7 0 10 -258699 -1
+-1;
+#X obj 638 413 bng 30 250 50 0 empty c_2 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 755 321 cnv 30 40 80 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 762 328 bng 30 250 50 0 empty d_2 empty 17 7 0 10 -128992 -1
+-1;
+#X obj 762 364 bng 30 250 50 0 empty e_2 empty 17 7 0 10 -24198 -1
+-1;
+#X obj 374 641 bng 60 250 50 0 empty empty empty 17 7 0 10 -86853 -1
+-1;
+#X obj 682 322 bng 60 250 50 0 empty empty empty 17 7 0 10 -86853 -1
+-1;
+#X obj 756 557 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 408 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 429 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 450 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 607 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 469 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 491 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 511 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 757 534 cnv 15 100 10 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 449 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 467 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 486 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 505 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 526 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 545 718 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 565 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 585 717 cnv 15 10 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 304 16 bng 80 250 50 0 empty empty empty 17 7 0 10 -2049 -1
+-1;
+#N canvas 918 99 829 694 _implementation 1;
+#X obj 94 43 inlet;
+#X obj 171 42 inlet;
+#X obj 241 42 inlet;
+#X obj 710 287 + 1;
+#X obj 659 242 metro 1000;
+#X obj 720 480 11 15 11 13 11;
+#X obj 588 417 spigot;
+#X obj 532 416 spigot;
+#X obj 642 417 spigot;
+#X msg 779 362 \; a_2 color \$2 \; b_2 color \$3 \; c_2 color \$4 \;
+d_2 color \$5 \; e_2 color \$6 \;;
+#X obj 281 280 + 1;
+#X obj 230 235 metro 1000;
+#X obj 230 280 f 0;
+#X obj 291 496 13 11 11 11 16;
+#X obj 291 473 11 15 11 13 11;
+#X obj 290 449 11 11 16 13 11;
+#X obj 132 414 spigot;
+#X obj 76 413 spigot;
+#X obj 186 414 spigot;
+#X msg 342 358 \; a_1 color \$2 \; b_1 color \$3 \; c_1 color \$4 \;
+d_1 color \$5 \; e_1 color \$6 \;;
+#X obj 659 287 f 0;
+#X obj 719 456 13 11 11 11 16;
+#X obj 720 503 11 11 16 13 11;
+#X obj 135 362 == 0;
+#X obj 168 361 == 10;
+#X obj 206 360 == 13;
+#X obj 230 313 mod 26;
+#X obj 237 414 spigot;
+#X obj 257 360 == 23;
+#X obj 714 363 == 23;
+#X obj 694 417 spigot;
+#X obj 591 365 == 0;
+#X obj 624 364 == 10;
+#X obj 662 363 == 13;
+#X obj 659 325 mod 26;
+#X msg 270 122 1;
+#X obj 370 774 + 1;
+#X obj 319 943 dac~;
+#X obj 335 848 sig~;
+#X obj 334 880 *~;
+#X obj 335 816 mod 2;
+#X obj 367 849 osc~ 700;
+#X obj 334 746 metro 600;
+#X obj 318 914 *~;
+#X obj 516 359 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 335 776 f 1;
+#X msg 721 569 \; w_e color \$2 \; n_s color \$3 \;;
+#X msg 292 557 \; w_e color \$2 \; n_s color \$3 \;;
+#X obj 292 528 14 11;
+#X obj 721 537 11 14;
+#X msg 471 123 13;
+#X msg 390 122 0;
+#X obj 326 39 inlet;
+#X msg 651 121 0;
+#X text 707 22 Stooping simulation and reseting all values;
+#X text 186 836 Generating Sound;
+#X text 12 321 Simulationg North South road lights-->;
+#X text 814 312 <-- Simulationg West East road lights;
+#X text 80 3 First inlet for starting \, second for West0East road
+\, third for North East road fourth for Stopping the simulation;
+#X obj 301 880 < 16;
+#X connect 0 0 35 0;
+#X connect 1 0 51 0;
+#X connect 2 0 50 0;
+#X connect 3 0 20 1;
+#X connect 4 0 20 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 22 0;
+#X connect 7 0 45 1;
+#X connect 7 0 49 0;
+#X connect 8 0 21 0;
+#X connect 10 0 12 1;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 12 0 26 0;
+#X connect 13 0 19 0;
+#X connect 14 0 19 0;
+#X connect 15 0 19 0;
+#X connect 16 0 14 0;
+#X connect 17 0 13 0;
+#X connect 18 0 15 0;
+#X connect 18 0 45 1;
+#X connect 18 0 48 0;
+#X connect 20 0 3 0;
+#X connect 20 0 34 0;
+#X connect 21 0 9 0;
+#X connect 22 0 9 0;
+#X connect 23 0 17 0;
+#X connect 23 0 17 1;
+#X connect 24 0 16 0;
+#X connect 24 0 16 1;
+#X connect 25 0 18 0;
+#X connect 25 0 18 1;
+#X connect 26 0 23 0;
+#X connect 26 0 24 0;
+#X connect 26 0 25 0;
+#X connect 26 0 28 0;
+#X connect 27 0 14 0;
+#X connect 28 0 27 0;
+#X connect 28 0 27 1;
+#X connect 29 0 30 0;
+#X connect 29 0 30 1;
+#X connect 30 0 5 0;
+#X connect 31 0 7 0;
+#X connect 31 0 7 1;
+#X connect 32 0 6 0;
+#X connect 32 0 6 1;
+#X connect 33 0 8 0;
+#X connect 33 0 8 1;
+#X connect 34 0 31 0;
+#X connect 34 0 32 0;
+#X connect 34 0 33 0;
+#X connect 34 0 29 0;
+#X connect 35 0 11 0;
+#X connect 35 0 4 0;
+#X connect 35 0 44 0;
+#X connect 36 0 45 1;
+#X connect 38 0 39 0;
+#X connect 39 0 43 1;
+#X connect 40 0 38 0;
+#X connect 41 0 39 1;
+#X connect 42 0 45 0;
+#X connect 43 0 37 0;
+#X connect 43 0 37 1;
+#X connect 44 0 42 0;
+#X connect 45 0 36 0;
+#X connect 45 0 40 0;
+#X connect 45 0 59 0;
+#X connect 48 0 47 0;
+#X connect 49 0 46 0;
+#X connect 50 0 20 1;
+#X connect 50 0 12 1;
+#X connect 51 0 20 1;
+#X connect 51 0 12 1;
+#X connect 52 0 53 0;
+#X connect 52 0 51 0;
+#X connect 53 0 11 0;
+#X connect 53 0 4 0;
+#X connect 53 0 44 0;
+#X connect 53 0 19 0;
+#X connect 53 0 9 0;
+#X connect 53 0 46 0;
+#X connect 59 0 43 0;
+#X restore 304 382 pd _implementation;
+#X text 153 664 Button To Pass North-South road ->;
+#X obj 908 380 bng 15 250 50 0 empty w_e empty 17 7 0 10 -260818 -1
+-1;
+#X obj 424 865 bng 15 250 50 0 empty n_s empty 17 7 0 10 -128992 -1
+-1;
+#X text 659 299 Button To Pass North-South road ->;
+#X text 804 346 Below bang turns orange when West-East road fully stops
+;
+#X text 70 864 Right bang turns orange when North-South road fully
+stops;
+#X text 712 6 When user start the simulation by pressing Start Button
+Simulation works continuously without stopping. Every cycle of traffic
+lights lasts 23 seconds. 10 seconds red 3 seconds yellow 10 seconds
+green. Traffic lights works back and forth.;
+#X obj 409 17 bng 80 250 50 0 empty empty empty 17 7 0 10 -217163 -1
+-1;
+#X text 498 45 <-- Stoping Simulation;
+#X text 151 45 Starting Simulation -->;
+#X connect 19 0 39 2;
+#X connect 20 0 39 1;
+#X connect 38 0 39 0;
+#X connect 47 0 39 3;
+#X coords 0 992 1 991 200 200 0;
